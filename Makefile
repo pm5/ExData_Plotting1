@@ -12,3 +12,4 @@ household_power_consumption.txt:
 
 %.png: %.R power.txt
 	R --save < $*.R
+
