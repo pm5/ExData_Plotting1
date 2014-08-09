@@ -10,5 +10,5 @@ power.txt: household_power_consumption.txt
 household_power_consumption.txt:
 	unzip exdata_data_household_power_consumption.zip
 
-plot1.png: plot1.R power.txt
-	R --save < plot1.R
+%.png: %.R power.txt
+	R --save < $*.R
